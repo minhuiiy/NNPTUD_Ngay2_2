@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Post Manager</title>
+<script src="main.js" defer></script>
+<style>
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #aaa; padding: 8px; }
+.deleted { text-decoration: line-through; color: gray; }
+</style>
+</head>
+<body>
+
+<h2>Post Manager (Soft Delete)</h2>
+
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Title</th>
+  <th>Views</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody id="table_body"></tbody>
+</table>
+
+<hr>
+
+<input id="txt_id" placeholder="ID (chỉ nhập khi sửa)">
+<input id="txt_title" placeholder="Title">
+<input id="txt_views" placeholder="Views">
+<button onclick="Save()">Save</button>
+
+</body>
+</html>
